@@ -1,0 +1,259 @@
+	body {
+		padding: 0;
+		font-size: 15px;
+		line-height: 1.4;
+		margin: 0 150px;   
+		border: 1px solid #dedede;
+		font-family: Arial;
+		font-weight: 400;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+	}
+	* {
+		box-sizing: border-box;
+	}
+	.header {
+		width: 100%;
+		overflow: auto;
+	}
+	.logo {
+		width: 15%;
+		float: left;
+	}
+	.logo img {
+		width: 100%;
+	}
+	.name {
+		width: 85%;
+		float: left;
+		padding: 20px 5px;
+	}
+	.name p {
+		font-weight: bold;
+		margin: 5px;
+	}
+	.nav {
+		background-color: #d30c05; 
+		color: white;
+		width: 100%;
+		overflow: auto;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		display: inline-table;
+	}
+	.nav a, .nav p {
+		padding: 10px;
+		display: block;
+		color: white;
+	}
+	a {
+		text-decoration: none;
+	}
+	.flag {
+		float: right;
+		padding: 7px;
+		display: block;
+	}
+	.flag a {
+		padding: 0;
+		float: left;
+	}
+	.flag img {
+		height: 16px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+	}
+	.body {
+		background-color: white;
+		padding: 15px;
+		width: 100%;
+		overflow: auto;
+	}
+	.body a:hover {
+		color: blue;
+	}
+	.slide img {
+		width: 100%;
+	}
+	.content {
+		width: 100%;
+		padding-top: 15px;
+	}
+	.content-left {
+		width: 75%;
+		float: left;
+		padding-right: 15px;
+	}
+	.content-right {
+		width: 25%;
+		float: left;
+	}
+	.tin {
+		border: 1px solid #dedede;
+		overflow: auto;
+		margin-bottom: 25px;
+	}
+	.head-tin {
+		width: 100%;
+		color: white;
+		background-color: #d30c05;
+		padding: 15px;
+	}
+	.body-tin {
+		width: 100%;
+		padding: 20px;
+		overflow: auto;
+	}
+	.body-tin img {
+		width: 100%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+	}
+	.col-left {
+		width: 66.66%;
+		float: left;
+		margin: 0;
+	}
+	.col-right {
+		width: 33.33%;
+		float: left;
+		margin: 0;
+		padding-left: 20px; 
+		color: #124188;
+	}
+	.col-left img {
+		width: 50%;
+		float: left;
+		margin-right: 20px;
+	}	
+	p {
+		margin: 0;
+	}
+	.col1 {
+		width: 20%;
+		float: left;
+		padding: 10px;
+	}
+	.prev, .next {
+		width: 10%;
+		float: left;
+		font-size: 30px;
+		text-align: center;
+		margin-top: 50px;
+	}
+	.col1 p {
+		padding: 10px 0px;
+	}
+	.left, .right {
+		width: 50%;
+		float: left;
+	}
+	.left {
+		padding-right: 10px;
+	}
+	.right {
+		padding-left: 10px;
+	}
+	.left img, .right img {
+		padding: 10px;
+		width: 100%;
+		height: 95px;
+		object-fit: contain;
+		margin-bottom: 20px;
+	}
+	.footer {
+		background-color: #313131;
+		color: #9d9d9d;
+		text-align: center;
+		padding: 50px 0;
+	}
+	@media screen and (max-width: 1000px) {
+		body {
+			margin: 0px;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		body {
+			margin: 0px;
+		}
+		.content-left, .content-right {
+			width: 100%;
+		}
+	}
+	#dropdown-menu a {
+		color: white;
+		text-decoration: none;
+		background-color: #d30c05;
+	}
+	#dropdown-btn {
+		position: relative;
+	}
+	#dropdown-menu {
+		position: absolute;
+		display: none;
+		z-index: 1;
+	}
+	#dropdown-menu li {
+		display: block;
+	}
+	#time {
+		background-color: black;
+		border-radius: 5px;
+		color: white;
+		font-weight: bold;
+		float: right; 
+		padding: 5px;
+		margin: 5px;			 
+		display: block;
+	}
+	.next:hover, .prev:hover {
+		color: red;
+	}
+	.fade {
+		animation-name: fade;
+		animation-duration: 2s;
+	}
+	@-webkit-keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+	@keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+	.chervon {
+		text-align: center;
+		margin: 0;
+		background-color: gray;
+	}
+	.new {
+		padding: 10px;
+	}
+	.acc {
+		font-weight: bold;
+	    background: black;
+	    color: white;
+	    border: none;
+	    float: right;
+	    text-align: center;
+	}
+	.dropdown-btn1 {
+		position: relative;
+		background-color: black;
+		color: white;
+		padding: 10px;
+		border: none;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 1.4;
+	}
+	.dropdown1 {
+		float: right;
+	}
+	.dropdown-content1 {
+		display: none;
+		position: absolute;
+		background-color: black;
+		color: white;
+		font-weight: bold;
+		z-index: 1;
+	}
